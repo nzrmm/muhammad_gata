@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center flex-row-reverse gap-2 sm:flex-row sm:gap-12">
+  <div class="flex items-center">
     <!-- Mobile Navigation -->
     <transition name="menu-mobile">
       <section v-if="menu" class="nav-list list-mobile flex-center">
@@ -24,7 +24,7 @@
     </section>
 
     <button class="cursor-pointer" v-else @click="toggleMenu">
-      <IconMenu />
+      <IconMenu class="fill-neutral-900 dark:fill-white" />
     </button>
   </div>
 </template>
@@ -63,13 +63,13 @@ export default {
 
 <style scoped>
 .nav-list {
-  @apply flex gap-6 text-lg text-typo-500;
+  @apply flex gap-6 text-lg text-typo-500 dark:text-white/60;
 }
 
 .list-mobile {
   @apply w-full min-h-screen flex-col  
     fixed top-0 left-0  
-    text-typo-500
+    text-typo-500 dark:text-white/60
     bg-dark;
 }
 

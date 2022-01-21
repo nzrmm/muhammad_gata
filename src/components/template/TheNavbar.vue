@@ -5,7 +5,11 @@
         <IconLogo />
       </router-link>
 
-      <BaseNavList />
+      <div
+        class="flex items-center flex-row-reverse gap-2 sm:flex-row sm:gap-12">
+        <BaseNavList />
+        <BaseNavTheme />
+      </div>
     </div>
   </nav>
 </template>
