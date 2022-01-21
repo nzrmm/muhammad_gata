@@ -1,0 +1,5 @@
+<template>
+  <div>
+    <h1>Certificate</h1>
+  </div>
+</template>
