@@ -1,13 +1,13 @@
 <template>
   <section class="py-20 min-h-screen flex items-center">
-    <div class="md:flex-between-start md:flex-row flex flex-col w-full">
+    <div class="flex-between-start w-full">
       <div class="mb-6 md:mb-0">
         <h1 class="w-6/12 sm:w-full name-after tracking-[-.4rem]">
           M. Gata <br />Hafi Lutfi
         </h1>
       </div>
       <div>
-        <div class="mt-4 flex flex-row md:flex-col gap-6">
+        <div class="mt-4 flex flex-col gap-6">
           <a href="https://github.com/nzrmm" target="_blank">
             <IconGithub
               class="fill-neutral-500 hover:fill-neutral-900 hover:dark:fill-primary-600" />
