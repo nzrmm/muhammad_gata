@@ -5,12 +5,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-[1.08rem] text-black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  h1 {
+    @apply text-7xl sm:text-8xl md:text-[7rem] md:leading-none font-medium uppercase;
+  }
+
+  h3 {
+    @apply text-4xl md:text-5xl md:tracking-tight;
+  }
+
+  h5 {
+    @apply text-2xl tracking-tight;
+  }
+}
+
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
   }
 
-  .flex-between {
+  .flex-between-center {
     @apply flex justify-between items-center;
+  }
+
+  .flex-between-start {
+    @apply flex justify-between items-start;
   }
 }

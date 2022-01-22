@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <div class="container flex-between">
+    <div class="container flex-between-center">
       <router-link :to="{ name: 'Home' }" class="nav-logo">
         <IconLogo />
       </router-link>
