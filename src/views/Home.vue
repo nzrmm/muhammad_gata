@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <main class="container">
     <TheHero />
-  </div>
+    <TheAbout />
+  </main>
 </template>
