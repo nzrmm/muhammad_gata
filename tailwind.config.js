@@ -23,7 +23,10 @@ module.exports = {
           500: colors.emerald[500],
           600: colors.emerald[600],
         },
-        dark: '#001f24',
+        dark: {
+          800: '#001f24',
+          700: '#152d32',
+        },
         typo: colors.neutral,
       },
     },

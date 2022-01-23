@@ -1,7 +1,10 @@
 <template>
   <div class="flex items-center">
     <!-- Mobile Navigation -->
-    <transition name="menu-mobile">
+    <transition
+      name="menu-mobile"
+      enter-active-class="animate__animated animate__fadeInDownBig"
+      leave-active-class="animate__animated animate__fadeOutUpBig">
       <section v-if="menu" class="nav-list list-mobile flex-center">
         <router-link :to="{ name: 'Home' }">Home</router-link>
         <router-link :to="{ name: 'Project' }">Project</router-link>
@@ -70,19 +73,10 @@ export default {
   @apply w-full min-h-screen flex-col  
     fixed top-0 left-0  
     text-typo-500 dark:text-white/60
-    bg-dark;
+    bg-dark-700;
 }
 
 .router-link-exact-active {
   @apply text-white sm:text-typo-900 dark:text-white font-semibold;
-}
-/* Menu Mobile Animation */
-.menu-mobile-enter-from,
-.menu-mobile-leave-to {
-  @apply opacity-0 -translate-y-full;
-}
-.menu-mobile-enter-active,
-.menu-mobile-leave-active {
-  @apply transition duration-500;
 }
 </style>
