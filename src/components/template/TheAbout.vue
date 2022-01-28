@@ -1,56 +1,35 @@
 <template>
   <section class="py-20">
-    <div class="mb-10 text-center">
-      <span>{{ title }}</span>
-      <h3>{{ snippet }}</h3>
-    </div>
-    <div class="grid gap-y-8 grid-cols-1 xl:grid-cols-4 items-center">
-      <div class="xl:col-span-3 grid gap-4 grid-cols-1 md:grid-cols-2">
-        <div
-          v-for="(about, index) in abouts"
-          :key="index"
-          class="p-6 bg-neutral-200 dark:bg-white/10 rounded-xl">
-          <h4 class="mb-2">{{ about.title }}</h4>
-          <p class="text-typo-600 dark:text-white/60">{{ about.desc }}</p>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="mt-20">
+        <h3 class="mb-10">
+          Muhammad <br />
+          Gata
+        </h3>
+        <span class="uppercase">- enthusiastic front end developer</span>
+        <div class="mt-12 w-10/12 text-typo-400">
+          <p class="mb-6 leading-loose">
+            Hello my name is Muhammad Gata. I was born in Malang East Java, but
+            i spent time living in Mojokerto East Java. I have good skill in
+            Front-end Development. Now, i focused how to make beautifull user
+            interface and satisfied user exprerience to increase user enjoyment.
+          </p>
+          <p class="leading-loose">
+            I chose front end development because I love to see beautiful
+            designs, smooth interactivity in website and about the right layout.
+            For me, pouring design as code is the best healing for now.
+          </p>
         </div>
       </div>
-      <div class="xl:col-span-1 flex-center">
-        <span class="text-9xl">👋</span>
+      <div>
+        <figure class="mb-10">
+          <img
+            src="/images/profile-me.webp"
+            class="w-full h-auto shadow-lg shadow-neutral-900"
+            alt="profile me" />
+        </figure>
+        <BaseSocialsIcon />
       </div>
     </div>
   </section>
 </template>
-
-<script>
-import { reactive, toRefs } from 'vue';
-export default {
-  setup() {
-    const about = reactive({
-      title: 'About Me',
-      snippet: 'Welcome to about me',
-      abouts: [
-        {
-          title: 'Biodata',
-          desc: 'Hello, my name is M. Gata Hafi Lutfi, i was born in Mojokerto East Java. Now, iam 18 yo.',
-        },
-        {
-          title: 'Education',
-          desc: 'actually my educational background is networking, but iam very interested in programming😅',
-        },
-        {
-          title: 'Games & Music',
-          desc: 'For game, i like to play soccer games like PES or FIFA. and for music, i love calm music.',
-        },
-        {
-          title: 'Hobby',
-          desc: 'I like watch movies, read programming article, and of course playing games😅',
-        },
-      ],
-    });
-
-    return {
-      ...toRefs(about),
-    };
-  },
-};
-</script>
