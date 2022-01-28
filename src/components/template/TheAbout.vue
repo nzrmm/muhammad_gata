@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20">
+  <section class="py-28">
     <div class="grid grid-cols-2 gap-4">
       <div class="mt-20">
         <h3 class="mb-10">
@@ -28,7 +28,7 @@
             class="w-full h-auto shadow-lg shadow-neutral-900"
             alt="profile me" />
         </figure>
-        <BaseSocialsIcon />
+        <BaseSocialIcon />
       </div>
     </div>
   </section>

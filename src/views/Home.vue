@@ -2,6 +2,6 @@
   <main class="container">
     <TheHero />
     <TheAbout />
-    <TheProject />
+    <TheBestProject />
   </main>
 </template>

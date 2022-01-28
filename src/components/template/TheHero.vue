@@ -6,9 +6,9 @@
         <span class="text-color">Front end Developer</span>. I focused to make
         beautifull UI and satisfied UX.
       </h1>
-      <span class="text-typo-400 flex justify-end"
-        >- Write by Muhammad Gata</span
-      >
+      <span class="text-typo-400 flex justify-end">
+        - Write by Muhammad Gata
+      </span>
     </div>
   </section>
 </template>
