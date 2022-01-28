@@ -1,17 +1,17 @@
 <template>
   <section class="py-20">
     <div class="mb-10 text-center">
-      <span>{{ about.title }}</span>
-      <h3>{{ about.snippet }}</h3>
+      <span>{{ title }}</span>
+      <h3>{{ snippet }}</h3>
     </div>
     <div class="grid gap-y-8 grid-cols-1 xl:grid-cols-4 items-center">
       <div class="xl:col-span-3 grid gap-4 grid-cols-1 md:grid-cols-2">
         <div
-          v-for="(me, index) in about.aboutme"
+          v-for="(about, index) in abouts"
           :key="index"
           class="p-6 bg-neutral-200 dark:bg-white/10 rounded-xl">
-          <h4 class="mb-2">{{ me.title }}</h4>
-          <p class="text-typo-600 dark:text-white/60">{{ me.desc }}</p>
+          <h4 class="mb-2">{{ about.title }}</h4>
+          <p class="text-typo-600 dark:text-white/60">{{ about.desc }}</p>
         </div>
       </div>
       <div class="xl:col-span-1 flex-center">
@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import { reactive } from 'vue';
+import { reactive, toRefs } from 'vue';
 export default {
   setup() {
     const about = reactive({
       title: 'About Me',
       snippet: 'Welcome to about me',
-      aboutme: [
+      abouts: [
         {
           title: 'Biodata',
           desc: 'Hello, my name is M. Gata Hafi Lutfi, i was born in Mojokerto East Java. Now, iam 18 yo.',
@@ -49,7 +49,7 @@ export default {
     });
 
     return {
-      about,
+      ...toRefs(about),
     };
   },
 };
