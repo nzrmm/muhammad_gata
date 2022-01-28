@@ -1,40 +1,20 @@
 <template>
-  <section class="py-20 min-h-screen flex items-center">
-    <div class="flex-between-start w-full">
-      <div class="mb-6 md:mb-0">
-        <h1 class="w-6/12 sm:w-full name-after tracking-[-.4rem]">
-          M. Gata <br />Hafi Lutfi
-        </h1>
-      </div>
-      <div>
-        <div class="mt-4 flex flex-col gap-6">
-          <a href="https://github.com/nzrmm" target="_blank">
-            <IconGithub
-              class="fill-neutral-500 hover:fill-neutral-900 hover:dark:fill-primary-600" />
-          </a>
-          <a
-            href="https://web.facebook.com/profile.php?id=100010330266856"
-            target="_blank">
-            <IconFacebook
-              class="fill-neutral-500 hover:fill-neutral-900 hover:dark:fill-primary-600" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/muhammad-gata-44a66b1b5/"
-            target="_blank">
-            <IconLinkedin
-              class="fill-neutral-500 hover:fill-neutral-900 hover:dark:fill-primary-600" />
-          </a>
-        </div>
-      </div>
+  <section class="py-40 min-h-screen">
+    <div>
+      <h1 class="mb-6 text-7xl uppercase">
+        Hi! Im <span class="text-teal-500">Muhammad Gata</span>,
+        <span class="text-color">Front end Learner</span>. I focused to make
+        beautifull UI and satisfied UX.
+      </h1>
+      <span class="text-typo-400 flex justify-end"
+        >- Write by Muhammad Gata</span
+      >
     </div>
   </section>
 </template>
 
 <style scoped>
-.name-after {
-  @apply after:content-['']
-   after:ml-2 after:mt-3
-   after:block after:border-b-[10px] 
-   after:border-primary-600 after:w-[80px];
+.text-color {
+  @apply hover:bg-gradient-to-r from-teal-400 to-purple-400 hover:bg-clip-text hover:text-transparent transition-all duration-500;
 }
 </style>

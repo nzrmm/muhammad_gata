@@ -15,7 +15,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Karla', 'sans-serif'],
-      heading: ['Rubik', 'sans-serif'],
+      heading: ['Dela Gothic One', 'cursive'],
     },
     extend: {
       colors: {
@@ -24,8 +24,8 @@ module.exports = {
           600: colors.emerald[600],
         },
         dark: {
-          800: '#001f24',
-          700: '#152d32',
+          800: '#090809',
+          700: '#292A2C',
         },
         typo: colors.neutral,
       },
