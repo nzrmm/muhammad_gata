@@ -1,8 +1,6 @@
 <template>
-  <section class="py-28">
-    <div class="grid gap-8">
-      <BaseBestProject v-bind="{ bestProjects }" />
-    </div>
+  <section class="py-28 grid gap-8">
+    <BaseBestProject v-bind="{ bestProjects }" />
   </section>
 </template>
 
