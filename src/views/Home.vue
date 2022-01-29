@@ -3,5 +3,6 @@
     <TheHero />
     <TheAbout />
     <TheBestProject />
+    <TheSkill />
   </main>
 </template>

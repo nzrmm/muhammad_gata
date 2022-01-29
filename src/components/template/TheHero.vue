@@ -1,5 +1,5 @@
 <template>
-  <section class="py-40 min-h-screen">
+  <section class="py-28 min-h-screen flex items-center">
     <div>
       <h1 class="mb-6 text-7xl uppercase">
         Hi! Im <span class="text-teal-500">Muhammad Gata</span>,

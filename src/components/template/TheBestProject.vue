@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { projects } from '@/data/projects.js';
+import { projects } from '@/data/data.js';
 import { ref } from 'vue';
 export default {
   setup() {
