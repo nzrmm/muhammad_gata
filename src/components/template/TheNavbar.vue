@@ -17,7 +17,6 @@
 <style scoped>
 .nav {
   @apply z-50 w-full py-4 
-   fixed top-0 left-0 
-   bg-transparent backdrop-blur;
+   absolute top-0 left-0;
 }
 </style>

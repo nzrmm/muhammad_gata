@@ -19,7 +19,7 @@
 import { ref, onMounted } from 'vue';
 export default {
   setup() {
-    const isVisible = ref(true);
+    const isVisible = ref(false);
     const intervalId = ref();
 
     const scrollVisible = () => {
