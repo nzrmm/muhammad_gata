@@ -4,5 +4,6 @@
     <TheAbout />
     <TheSkill />
     <TheBestProject />
+    <TheContact />
   </main>
 </template>
