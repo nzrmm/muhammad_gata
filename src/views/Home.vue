@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main class="bg-white dark:bg-dark-800">
     <TheHero />
     <TheAbout />
     <TheSkill />

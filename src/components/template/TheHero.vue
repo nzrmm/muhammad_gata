@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen flex items-center">
-    <div>
+    <div class="container">
       <h1 class="mb-6 text-7xl uppercase">
         Hi! Im <span class="text-teal-500">Muhammad Gata</span>,
         <span class="span-gradient-with-hover">Front end Developer</span>. I
