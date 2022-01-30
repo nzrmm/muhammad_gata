@@ -5,5 +5,6 @@
     <TheSkill />
     <TheBestProject />
     <TheContact />
+    <TheFooter />
   </main>
 </template>

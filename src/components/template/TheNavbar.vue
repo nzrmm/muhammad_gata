@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="container flex-between-center">
       <router-link :to="{ name: 'Home' }" class="nav-logo">
-        <IconLogo />
+        <IconLogo class="w-28" />
       </router-link>
 
       <div
