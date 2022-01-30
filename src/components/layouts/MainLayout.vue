@@ -3,6 +3,6 @@
     class="antialised text-typo-900 dark:text-white bg-white dark:bg-dark-800 min-h-screen overflow-x-hidden transition-all duration-500">
     <TheNavbar />
     <slot></slot>
-    <!-- <TheScrollToTop /> -->
+    <TheScrollToTop />
   </div>
 </template>
