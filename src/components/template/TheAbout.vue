@@ -1,7 +1,7 @@
 <template>
   <section class="py-28">
-    <div class="container grid grid-cols-2 gap-4">
-      <div class="mt-20">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="order-2 lg:order-none mt-20">
         <h3 class="mb-10">
           Muhammad <br />
           Gata
@@ -21,7 +21,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="order-1 lg:order-none">
         <figure class="mb-10">
           <img
             src="/images/profile-me.webp"

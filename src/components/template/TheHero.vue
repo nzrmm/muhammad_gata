@@ -1,13 +1,13 @@
 <template>
-  <section class="min-h-screen flex items-center">
+  <section class="py-28 xl:py-0 min-h-screen flex items-center">
     <div class="container">
-      <h1 class="mb-6 text-7xl uppercase">
+      <h1 class="mb-6 text-2xl md:text-4xl xl:text-7xl uppercase">
         Hi! Im <span class="text-teal-500">Muhammad Gata</span>,
         <span class="span-gradient-with-hover">Front end Developer</span>. I
         focused to make beautifull <span class="span-gradient">UI</span> and
         satisfied <span class="span-gradient">UX</span>.
       </h1>
-      <span class="text-typo-400 flex justify-end">
+      <span class="text-sm md:text-base text-typo-400 flex justify-end">
         - Write by Muhammad Gata
       </span>
     </div>
