@@ -3,7 +3,7 @@
     <div
       class="py-16 container grid grid-cols-12 gap-8 lg:gap-4 border-t border-neutral-600">
       <div class="col-span-full lg:col-span-3">
-        <IconLogo class="w-48" />
+        <IconLogo class="w-40" />
       </div>
       <div class="col-span-full lg:col-span-6 text-typo-400">
         <p class="mb-8 text-2xl leading-relaxed">
