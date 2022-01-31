@@ -6,29 +6,12 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading;
+  h1 {
+    @apply font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-7xl uppercase;
   }
 
-  h3 {
-    @apply text-4xl md:text-5xl md:tracking-tight font-medium;
-  }
-
-  h4 {
-    @apply text-3xl font-medium;
-  }
-
-  h5 {
-    @apply text-2xl tracking-tight;
-  }
-
-  h6 {
-    @apply text-xl tracking-tight;
+  h2 {
+    @apply font-heading text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
   }
 }
 
@@ -37,11 +20,15 @@
     @apply flex justify-center items-center;
   }
 
-  .flex-between-center {
-    @apply flex justify-between items-center;
+  .transition-500 {
+    @apply transition-all duration-500;
   }
 
-  .flex-between-start {
-    @apply flex justify-between items-start;
+  .text-gradient {
+    @apply bg-gradient-to-r from-teal-500 to-purple-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-with-hover {
+    @apply hover:bg-gradient-to-r from-teal-400 to-purple-400 hover:bg-clip-text hover:text-transparent;
   }
 }

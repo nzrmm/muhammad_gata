@@ -1,6 +1,6 @@
 <template>
   <div class="py-10">
-    <div class="container flex justify-center gap-8">
+    <div class="container flex-center flex-wrap gap-8">
       <div class="icon-wrapper group">
         <IconHtml class="icon-color" />
         <span class="icon-name">Html</span>

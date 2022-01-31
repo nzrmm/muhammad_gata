@@ -2,7 +2,6 @@
   <div class="flex items-center">
     <!-- Mobile Navigation -->
     <transition
-      name="menu-mobile"
       enter-active-class="animate__animated animate__fadeInDownBig"
       leave-active-class="animate__animated animate__fadeOutUpBig">
       <section v-if="menu" class="nav-list list-mobile flex-center">
@@ -11,7 +10,7 @@
         <router-link :to="{ name: 'Certificate' }">Certificate</router-link>
         <router-link :to="{ name: 'Blog' }">Blog</router-link>
         <div
-          class="mt-4 w-12 h-12 flex-center hover:bg-white/10 rounded-full cursor-pointer transition-all"
+          class="mt-4 w-12 h-12 flex-center hover:bg-neutral-200/10 rounded-full cursor-pointer transition-500"
           @click="toggleMenu">
           <IconClose />
         </div>
@@ -27,7 +26,7 @@
     </section>
 
     <button class="cursor-pointer" v-else @click="toggleMenu">
-      <IconMenu class="fill-neutral-900 dark:fill-white" />
+      <IconMenu class="fill-white" />
     </button>
   </div>
 </template>
@@ -44,7 +43,7 @@ export default {
     };
 
     const checkScreen = () => {
-      if (window.innerWidth <= 640) {
+      if (window.innerWidth <= 768) {
         mobile.value = true;
         return;
       }
@@ -66,17 +65,16 @@ export default {
 
 <style scoped>
 .nav-list {
-  @apply flex gap-6 text-lg text-typo-500 dark:text-white/60;
+  @apply flex gap-6 text-lg text-typo-400;
 }
 
 .list-mobile {
   @apply w-full min-h-screen flex-col  
     fixed top-0 left-0  
-    text-typo-500 dark:text-white/60
-    bg-dark-700;
+    text-typo-400 bg-dark-700;
 }
 
 .router-link-exact-active {
-  @apply text-white sm:text-typo-900 dark:text-white font-semibold;
+  @apply text-white font-semibold;
 }
 </style>

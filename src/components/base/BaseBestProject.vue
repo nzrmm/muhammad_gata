@@ -1,10 +1,10 @@
 <template>
   <div
-    class="py-28 border-t border-neutral-700"
+    class="py-20 lg:py-28 border-t border-neutral-800"
     v-for="(project, index) in bestProjects"
     :key="index">
-    <div class="mb-20 grid grid-cols-2 items-center">
-      <h3>{{ project.title }}</h3>
+    <div class="mb-20 grid lg:grid-cols-2 items-center gap-6">
+      <h2>{{ project.title }}</h2>
       <div>
         <div class="mb-4 flex gap-4">
           <span
