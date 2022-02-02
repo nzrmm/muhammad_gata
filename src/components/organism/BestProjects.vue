@@ -4,7 +4,7 @@
     :key="project.id"
     class="py-20 lg:py-28 border-t border-neutral-800">
     <BestProjectsDetail v-bind="{ project }" />
-    <BestProjectsImage :img="project.img" :alt="project.slug" />
+    <BestProjectsImage v-bind="{ project }" />
   </div>
 </template>
 

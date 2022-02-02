@@ -1,6 +1,14 @@
 <template>
   <div class="mb-20 grid lg:grid-cols-2 items-center gap-6">
-    <h2>{{ project.title }}</h2>
+    <h2>
+      <router-link
+        :to="{
+          name: 'Project Details',
+          params: { slug: project.slug },
+        }">
+        {{ project.title }}
+      </router-link>
+    </h2>
     <div>
       <div class="mb-4 flex gap-4">
         <span

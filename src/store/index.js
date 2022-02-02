@@ -6,6 +6,11 @@ const store = createStore({
     menu: false,
     projects: projects,
   },
+  getters: {
+    getProjectBySlug: state => slug => {
+      return state.projects.find(project => project.slug === slug);
+    },
+  },
   mutations: {
     TOGGLE_MENU(state) {
       state.menu = !state.menu;

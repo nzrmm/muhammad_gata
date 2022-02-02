@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Blog from '@/views/Blog.vue';
-import Project from '@/views/Project.vue';
+import Project from '@/views/Project/index.vue';
+import ProjectDetails from '@/views/Project/details.vue';
 import Certificate from '@/views/Certificate.vue';
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
     path: '/project',
     name: 'Project',
     component: Project,
+  },
+  {
+    path: '/project/:slug',
+    name: 'Project Details',
+    component: ProjectDetails,
   },
   {
     path: '/certificate',

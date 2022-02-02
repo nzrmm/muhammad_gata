@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    slug: 'project-1',
+    slug: 'cuanmaker-dashboard',
     img: 'project-1.webp',
     title: 'Cuanmaker Dashboard',
     tags: ['tailwindcss', 'vue 3'],
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     id: 2,
-    slug: 'project-2',
+    slug: 'countries',
     img: 'project-2.webp',
     title: 'Countries',
     tags: ['tailwindcss', 'vue 3', 'axios'],
@@ -19,9 +19,9 @@ export const projects = [
   },
   {
     id: 3,
-    slug: 'project-3',
+    slug: 'gpt-slicing',
     img: 'project-3.webp',
-    title: 'GTP Slicing',
+    title: 'GPT Slicing',
     tags: ['bootstrap 5', 'sass'],
     snippet: 'Slicing landing page design from arshakir dribbble collection.',
   },

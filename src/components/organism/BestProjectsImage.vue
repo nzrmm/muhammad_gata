@@ -1,23 +1,19 @@
 <template>
-  <div
-    class="w-full h-min lg:h-[600px] hover:p-4 bg-gradient-to-br from-teal-500 to-purple-500 transition-500">
-    <img
-      :src="`/images/${img}`"
-      class="w-full h-full object-cover object-top"
-      :alt="alt" />
-  </div>
+  <router-link
+    :to="{
+      name: 'Project Details',
+      params: { slug: project.slug },
+    }">
+    <BaseImageLarge :img="project.img" :alt="project.slug" />
+  </router-link>
 </template>
 
 <script>
 export default {
   props: {
-    img: {
-      type: String,
-      default: '',
-    },
-    alt: {
-      type: String,
-      default: 'img',
+    project: {
+      type: Object,
+      required: true,
     },
   },
 };

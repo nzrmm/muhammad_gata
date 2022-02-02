@@ -1,10 +1,9 @@
 <template>
-  <main class="bg-white dark:bg-dark-800">
+  <main class="bg-dark-800">
     <TheHero />
     <TheAbout />
     <TheSkill />
     <TheBestProject />
     <TheContact />
-    <TheFooter />
   </main>
 </template>
