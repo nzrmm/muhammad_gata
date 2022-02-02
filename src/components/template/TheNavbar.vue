@@ -5,7 +5,7 @@
         <IconLogo class="w-14" />
       </router-link>
 
-      <BaseNavList />
+      <NavbarLists />
     </div>
   </nav>
 </template>

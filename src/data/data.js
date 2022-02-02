@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     slug: 'project-1',
     img: 'project-1.webp',
     title: 'Cuanmaker Dashboard',
@@ -8,6 +9,7 @@ export const projects = [
       'Slicing dashboard design from discord challenge Mas Azarie Muhammad.',
   },
   {
+    id: 2,
     slug: 'project-2',
     img: 'project-2.webp',
     title: 'Countries',
@@ -16,6 +18,7 @@ export const projects = [
       'Country finder from Frontend Mentor Challenge and API from restcountries.com',
   },
   {
+    id: 3,
     slug: 'project-3',
     img: 'project-3.webp',
     title: 'GTP Slicing',

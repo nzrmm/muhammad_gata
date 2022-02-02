@@ -8,8 +8,8 @@
       class="flex-center flex-col fixed bottom-6 right-0 cursor-pointer">
       <p class="-rotate-90 text-sm">Back to top</p>
       <div
-        class="flex-center mt-10 hover:mt-12 w-12 h-12 rounded-full bg-neutral-500 transition-all duration-500">
-        <IconArrowUp class="h-8 w-8" />
+        class="flex-center mt-10 hover:mt-12 w-12 h-12 rounded-full bg-dark-700 shadow shadow-dark-800 transition-500">
+        <IconArrowUp class="h-8 w-8 fill-white" />
       </div>
     </div>
   </transition>

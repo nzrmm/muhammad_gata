@@ -4,7 +4,7 @@
     <img
       :src="`/images/${img}`"
       class="w-full h-full object-cover object-top"
-      :alt="slug" />
+      :alt="alt" />
   </div>
 </template>
 
