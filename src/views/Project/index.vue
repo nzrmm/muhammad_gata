@@ -1,5 +1,35 @@
 <template>
-  <div class="bg-red-500">
-    <h1>Project</h1>
-  </div>
+  <main class="bg-dark-800">
+    <section class="py-28">
+      <div class="container grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div v-for="project in projects" :key="project.id">
+          <router-link
+            :to="{
+              name: 'Project Details',
+              params: { slug: project.slug },
+            }">
+            <BaseImageSmall :img="project.img" :alt="project.slug" />
+          </router-link>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
+
+<script>
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+export default {
+  setup() {
+    const store = useStore();
+
+    const projects = computed(() => {
+      return store.state.projects;
+    });
+
+    return {
+      projects,
+    };
+  },
+};
+</script>
