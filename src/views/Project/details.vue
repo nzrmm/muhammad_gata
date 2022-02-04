@@ -1,38 +1,39 @@
 <template>
-  <main class="bg-dark-700">
+  <main class="bg-dark-800">
     <section class="py-40">
       <div class="container">
-        <div class="mb-20 grid lg:grid-cols-2 gap-6">
-          <div>
-            <h1 class="mb-10 capitalize">
-              {{ project.title }}
-            </h1>
-            <div class="mb-4 flex gap-4">
-              <span
-                v-for="(tag, index) in project.tags"
-                :key="index"
-                class="px-3 py-1 bg-teal-700 rounded text-base">
-                {{ tag }}
-              </span>
-            </div>
-            <p class="text-typo-400">{{ project.snippet }}</p>
-          </div>
-          <div class="py-6 flex justify-center gap-4">
-            <a
-              href="https://github.com/nzrmm"
-              class="flex-center w-40 h-40 bg-dark-800/10 hover:box-gradient rounded-full group">
-              <IconGithub class="w-20 h-20 fill-white group-hover:scale-125" />
-            </a>
-            <a
-              href="https://github.com/nzrmm"
-              class="flex-center w-40 h-40 bg-dark-800/10 hover:box-gradient rounded-full group">
-              <IconArrowUpRight
-                class="w-20 h-20 fill-white group-hover:scale-125" />
-            </a>
-          </div>
+        <div class="mb-20 flex-center flex-col">
+          <h2 class="w-6/12 mb-16 uppercase text-center">
+            _{{ project.name }}_
+          </h2>
+          <p class="w-8/12 text-xl text-typo-400 leading-loose text-justify">
+            {{ project.description }}
+          </p>
         </div>
-
-        <BaseImageLarge :img="project.img" :alt="project.slug" />
+        <div class="mb-32">
+          <div class="mb-16 flex justify-end items-center gap-2">
+            <div class="group flex-center gap-6">
+              <span class="opacity-0 group-hover:opacity-100 transition-500">
+                please give me a star 😇
+              </span>
+              <BaseIconBoxLink :link="project.linkGithub">
+                <IconGithub class="w-8 h-8 fill-white" />
+              </BaseIconBoxLink>
+            </div>
+            <BaseIconBoxLink :link="project.linkLiveProject">
+              <IconArrowUpRight class="w-8 h-8 fill-white" />
+            </BaseIconBoxLink>
+          </div>
+          <BaseImageLarge :img="project.img" :alt="project.slug" />
+        </div>
+        <div class="flex justify-between items-center">
+          <router-link :to="{ name: 'Home' }">
+            <h4>&lt; Back</h4>
+          </router-link>
+          <a href="#">
+            <h4>email.me@pm</h4>
+          </a>
+        </div>
       </div>
     </section>
   </main>

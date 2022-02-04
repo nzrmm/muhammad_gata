@@ -6,7 +6,7 @@
           name: 'Project Details',
           params: { slug: project.slug },
         }">
-        {{ project.title }}
+        {{ project.name }}
       </router-link>
     </h2>
     <div>
