@@ -3,10 +3,11 @@
     <section class="py-40">
       <div class="container">
         <div class="mb-20 flex-center flex-col">
-          <h2 class="w-6/12 mb-16 uppercase text-center">
+          <h2 class="lg:w-6/12 mb-16 uppercase text-center">
             _{{ project.name }}_
           </h2>
-          <p class="w-8/12 text-xl text-typo-400 leading-loose text-justify">
+          <p
+            class="w-10/12 lg:w-8/12 lg:text-xl text-typo-400 leading-loose lg:text-justify">
             {{ project.description }}
           </p>
         </div>
@@ -26,7 +27,8 @@
           </div>
           <BaseImageLarge :img="project.img" :alt="project.slug" />
         </div>
-        <div class="flex justify-between items-center">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-4">
           <router-link :to="{ name: 'Home' }">
             <h4>&lt; Back</h4>
           </router-link>
