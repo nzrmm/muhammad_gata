@@ -4,7 +4,7 @@
       <div
         v-for="project in bestProjects.slice(0, 3)"
         :key="project.id"
-        class="py-20 lg:py-28 border-t border-neutral-800">
+        class="border-t border-neutral-800 py-20 lg:py-28">
         <BestProjectsHeader v-bind="{ project }" />
         <BestProjectsImage v-bind="{ project }" />
       </div>

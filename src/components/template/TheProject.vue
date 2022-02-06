@@ -1,6 +1,6 @@
 <template>
   <section class="py-28">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div v-for="project in projects" :key="project.id">
         <router-link
           :to="{

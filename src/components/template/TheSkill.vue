@@ -39,10 +39,10 @@
 }
 
 .icon-color {
-  @apply w-20 h-20 fill-neutral-800 hover:fill-teal-500 transition-all duration-500;
+  @apply h-20 w-20 fill-neutral-800 transition-all duration-500 hover:fill-teal-500;
 }
 
 .icon-name {
-  @apply opacity-0 group-hover:opacity-100 transition-all duration-500;
+  @apply opacity-0 transition-all duration-500 group-hover:opacity-100;
 }
 </style>

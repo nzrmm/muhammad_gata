@@ -5,10 +5,10 @@
     <div
       @click="scrollToTop"
       v-if="isVisible"
-      class="flex-center flex-col fixed bottom-6 right-0 cursor-pointer">
+      class="flex-center fixed bottom-6 right-0 cursor-pointer flex-col">
       <p class="-rotate-90 text-sm">Back to top</p>
       <div
-        class="flex-center mt-10 hover:mt-12 w-12 h-12 rounded-full bg-dark-700 shadow shadow-dark-800 transition-500">
+        class="flex-center transition-500 mt-10 h-12 w-12 rounded-full bg-dark-700 shadow shadow-dark-800 hover:mt-12">
         <IconArrowUp class="h-8 w-8 fill-white" />
       </div>
     </div>

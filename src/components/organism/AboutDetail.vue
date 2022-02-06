@@ -1,11 +1,11 @@
 <template>
-  <article class="order-last lg:order-none mt-20">
+  <article class="order-last mt-20 lg:order-none">
     <h2 class="mb-8 lg:mb-10">
       Muhammad <br />
       Gata
     </h2>
     <span class="uppercase">- enthusiastic front end developer</span>
-    <div class="mt-8 lg:mt-12 w-full lg:w-10/12 text-typo-400">
+    <div class="mt-8 w-full text-typo-400 lg:mt-12 lg:w-10/12">
       <p class="mb-6 leading-loose">
         Hello my name is Muhammad Gata. I was born in Malang East Java, but i
         spent time living in Mojokerto East Java. I have good skill in Front-end

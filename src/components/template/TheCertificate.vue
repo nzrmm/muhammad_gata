@@ -6,7 +6,7 @@
           <h4 class="mb-2">{{ certificate.name }}</h4>
           <p class="text-typo-400">{{ certificate.snippet }}</p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div v-for="image in certificate.images" :key="image.id">
             <BaseImageSmall :img="image.img" :alt="image.alt" />
           </div>

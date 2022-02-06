@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center gap-x-4">
+  <div class="flex items-center justify-center gap-x-4">
     <a href="https://github.com/nzrmm" target="_blank">
       <IconGithub class="icon icon-color transition-500" />
     </a>
@@ -14,7 +14,7 @@
 
 <style scoped>
 .icon {
-  @apply w-10 h-10;
+  @apply h-10 w-10;
 }
 
 .icon-color {

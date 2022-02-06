@@ -3,7 +3,7 @@
     <figure class="mb-10 flex justify-center">
       <img
         src="/images/profile-me.webp"
-        class="w-full sm:w-3/4 lg:w-full h-auto"
+        class="h-auto w-full sm:w-3/4 lg:w-full"
         alt="profile me" />
     </figure>
     <BaseSocialIcon />

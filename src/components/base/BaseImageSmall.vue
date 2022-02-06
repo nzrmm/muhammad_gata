@@ -1,9 +1,9 @@
 <template>
   <article
-    class="w-full h-min lg:h-[25rem] hover:p-4 bg-gradient-to-br from-teal-500 to-purple-500 transition-500">
+    class="transition-500 h-min w-full bg-gradient-to-br from-teal-500 to-purple-500 hover:p-4 lg:h-[25rem]">
     <img
       :src="`/images/${img}`"
-      class="w-full h-full object-cover"
+      class="h-full w-full object-cover"
       :alt="alt" />
   </article>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-20 grid lg:grid-cols-2 items-center gap-6">
+  <div class="mb-20 grid items-center gap-6 lg:grid-cols-2">
     <h2>
       <router-link
         :to="{
@@ -14,7 +14,7 @@
         <span
           v-for="(tag, index) in project.tags"
           :key="index"
-          class="px-3 py-1 bg-teal-700 rounded text-base">
+          class="rounded bg-teal-700 px-3 py-1 text-base">
           {{ tag }}
         </span>
       </div>

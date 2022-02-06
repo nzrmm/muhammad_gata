@@ -2,7 +2,7 @@
   <a
     :href="link"
     target="_blank"
-    class="box-gradient hover:opacity-60 flex-center w-12 h-12 rounded-lg transition-500">
+    class="box-gradient flex-center transition-500 h-12 w-12 rounded-lg hover:opacity-60">
     <slot></slot>
   </a>
 </template>

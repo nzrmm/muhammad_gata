@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+  <div class="flex flex-col items-center justify-between gap-4 lg:flex-row">
     <router-link :to="{ name: 'Project' }">
       <h4>&lt; Back</h4>
     </router-link>

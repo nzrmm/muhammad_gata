@@ -10,7 +10,7 @@
         <router-link :to="{ name: 'Certificate' }">Certificate</router-link>
         <router-link :to="{ name: 'Blog' }">Blog</router-link>
         <div
-          class="mt-4 w-12 h-12 flex-center hover:bg-neutral-200/10 rounded-full cursor-pointer transition-500"
+          class="flex-center transition-500 mt-4 h-12 w-12 cursor-pointer rounded-full hover:bg-neutral-200/10"
           @click="toggleMenu">
           <IconClose />
         </div>
@@ -69,12 +69,12 @@ export default {
 }
 
 .list-mobile {
-  @apply w-full min-h-screen flex-col  
-    fixed top-0 left-0  
-    text-typo-400 bg-dark-700;
+  @apply fixed top-0 left-0  
+    min-h-screen w-full flex-col  
+    bg-dark-700 text-typo-400;
 }
 
 .router-link-exact-active {
-  @apply text-white font-semibold;
+  @apply font-semibold text-white;
 }
 </style>

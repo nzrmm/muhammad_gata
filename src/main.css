@@ -11,7 +11,7 @@
   }
 
   h1 {
-    @apply font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-7xl uppercase;
+    @apply font-heading text-3xl uppercase sm:text-4xl lg:text-5xl xl:text-7xl;
   }
 
   h2 {
@@ -29,7 +29,7 @@
 
 @layer utilities {
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
 
   .transition-500 {
@@ -45,6 +45,6 @@
   }
 
   .text-gradient-with-hover {
-    @apply hover:bg-gradient-to-r from-teal-400 to-purple-400 hover:bg-clip-text hover:text-transparent;
+    @apply from-teal-400 to-purple-400 hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent;
   }
 }

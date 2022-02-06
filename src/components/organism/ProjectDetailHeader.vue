@@ -1,8 +1,8 @@
 <template>
-  <div class="mb-20 flex-center flex-col">
-    <h2 class="lg:w-6/12 mb-16 uppercase text-center">_{{ name }}_</h2>
+  <div class="flex-center mb-20 flex-col">
+    <h2 class="mb-16 text-center uppercase lg:w-6/12">_{{ name }}_</h2>
     <p
-      class="w-10/12 lg:w-8/12 lg:text-xl text-typo-400 leading-loose lg:text-justify">
+      class="w-10/12 leading-loose text-typo-400 lg:w-8/12 lg:text-justify lg:text-xl">
       {{ description }}
     </p>
   </div>

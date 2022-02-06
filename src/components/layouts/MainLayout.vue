@@ -1,6 +1,6 @@
 <template>
   <div
-    class="antialised text-white bg-dark-800 lg:text-lg min-h-screen overflow-x-hidden transition-500">
+    class="antialised transition-500 min-h-screen overflow-x-hidden bg-dark-800 text-white lg:text-lg">
     <TheNavbar />
     <slot></slot>
     <TheFooter />

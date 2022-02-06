@@ -1,6 +1,6 @@
 <template>
   <section class="py-28">
-    <div class="grid lg:grid-cols-2 gap-4">
+    <div class="grid gap-4 lg:grid-cols-2">
       <AboutDetail />
       <AboutImage />
     </div>
