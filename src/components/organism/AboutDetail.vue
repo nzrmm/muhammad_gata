@@ -1,5 +1,5 @@
 <template>
-  <div class="order-last lg:order-none mt-20">
+  <article class="order-last lg:order-none mt-20">
     <h2 class="mb-8 lg:mb-10">
       Muhammad <br />
       Gata
@@ -18,5 +18,5 @@
         pouring design as code is the best healing for now.
       </p>
     </div>
-  </div>
+  </article>
 </template>

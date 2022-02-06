@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-dark-800">
+  <footer class="py-8">
     <div
-      class="py-16 container grid grid-cols-12 gap-8 lg:gap-4 border-t border-neutral-800">
+      class="container py-16 grid grid-cols-12 gap-8 lg:gap-4 border-t border-neutral-800">
       <div class="col-span-full lg:col-span-3">
         <IconLogo class="w-40" />
       </div>
@@ -11,9 +11,9 @@
           my passion. Now, i focused to make beautifull UI and satisfied UX.
         </p>
 
-        <span class="text-sm"
-          >&copy; 2022 Muhammad Gata, build with love and spirit.</span
-        >
+        <span class="text-sm">
+          &copy; 2022 Muhammad Gata, build with love and spirit.
+        </span>
       </div>
       <div
         class="col-span-full lg:col-span-3 justify-self-start lg:justify-self-end">
