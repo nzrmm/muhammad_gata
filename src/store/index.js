@@ -1,10 +1,11 @@
 import { createStore } from 'vuex';
-import { projects } from '@/data/data.js';
+import { projects, certificates } from '@/data/data.js';
 
 const store = createStore({
   state: {
     menu: false,
     projects: projects,
+    certificates: certificates,
   },
   getters: {
     getProjectBySlug: state => slug => {

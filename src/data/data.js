@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     slug: 'cuanmaker-dashboard',
-    img: 'project-1.webp',
+    img: 'projects/project-1.webp',
     name: 'Cuanmaker Dashboard',
     tags: ['tailwindcss', 'vue 3'],
     snippet:
@@ -15,7 +15,7 @@ export const projects = [
   {
     id: 2,
     slug: 'countries',
-    img: 'project-2.webp',
+    img: 'projects/project-2.webp',
     name: 'Countries Finder',
     tags: ['tailwindcss', 'vue 3', 'axios'],
     snippet:
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 3,
     slug: 'gpt3-slicing',
-    img: 'project-3.webp',
+    img: 'projects/project-3.webp',
     name: 'GPT 3 Slicing',
     tags: ['bootstrap 5', 'sass'],
     snippet: 'Slicing landing page design from arshakir dribbble collection.',
@@ -36,5 +36,37 @@ export const projects = [
       'I found this free design in Arshakir portfolio, i choose this design because i think it is very beautifull and colorfull. In this challenge, i explore more about sass and bootstrap 5. Sass is very helpful to write css code more easily.',
     linkGithub: 'https://github.com/nzrmm/gpt3-slicing',
     linkLiveProject: 'https://gpt3-slicing.vercel.app',
+  },
+];
+
+export const certificates = [
+  {
+    id: 1,
+    name: 'Dicoding',
+    snippet: 'Start learning directed with the learning path.',
+    images: [
+      {
+        id: 1,
+        slug: 'dicoding-web-beginner',
+        img: 'certificates/dicoding-web-beginner.webp',
+      },
+      {
+        id: 2,
+        slug: 'dicoding-web-frontend-fundamental',
+        img: 'certificates/dicoding-web-frontend-fundamental.webp',
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Freecodecamp',
+    snippet: 'Learn to code — for free, build projects, earn certifications.',
+    images: [
+      {
+        id: 1,
+        slug: 'freecodecamp-responsive-web-design',
+        img: 'certificates/freecodecamp-responsive-web-design.webp',
+      },
+    ],
   },
 ];

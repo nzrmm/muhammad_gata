@@ -25,7 +25,7 @@
       <router-link :to="{ name: 'Blog' }">Blog</router-link>
     </section>
 
-    <button class="cursor-pointer" v-else @click="toggleMenu">
+    <button type="button" class="cursor-pointer" v-else @click="toggleMenu">
       <IconMenu class="fill-white" />
     </button>
   </div>
