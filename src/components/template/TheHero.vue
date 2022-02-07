@@ -4,11 +4,11 @@
       <h1 class="mb-6">
         Hi! Im <span class="text-teal-500">Muhammad Gata</span>,
         <span class="text-gradient-with-hover transition-500">
-          Front end Developer
+          Front end Developer.
         </span>
-        . I focused to make beautifull
+        I focused to make beautifull
         <span class="text-gradient">UI</span> and satisfied
-        <span class="text-gradient">UX</span>.
+        <span class="text-gradient">UX.</span>
       </h1>
       <span class="flex justify-end text-typo-400 md:text-lg">
         - Write by Muhammad Gata

@@ -1,9 +1,11 @@
 import { createStore } from 'vuex';
-import { projects, certificates } from '@/data/data.js';
+import { socials, skills, projects, certificates } from '@/data/data.js';
 
 const store = createStore({
   state: {
     menu: false,
+    socials: socials,
+    skills: skills,
     projects: projects,
     certificates: certificates,
   },

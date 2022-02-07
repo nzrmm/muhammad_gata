@@ -10,11 +10,13 @@
             please give me a star 😇
           </span>
           <BaseIconBoxLink :link="project.linkGithub">
-            <IconGithub class="h-8 w-8 fill-white" />
+            <Icon icon="bx:bxl-github" class="h-8 w-8 text-white" />
           </BaseIconBoxLink>
         </div>
         <BaseIconBoxLink :link="project.linkLiveProject">
-          <IconArrowUpRight class="h-8 w-8 fill-white" />
+          <Icon
+            icon="bx:bx-up-arrow-alt"
+            class="h-8 w-8 rotate-45 text-white" />
         </BaseIconBoxLink>
       </div>
       <BaseImageLarge :img="project.img" :alt="project.slug" />
@@ -27,7 +29,12 @@
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 import { useRoute } from 'vue-router';
+import { Icon } from '@iconify/vue';
+
 export default {
+  components: {
+    Icon,
+  },
   setup() {
     const route = useRoute();
     const store = useStore();

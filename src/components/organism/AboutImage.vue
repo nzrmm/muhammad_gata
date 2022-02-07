@@ -6,6 +6,6 @@
         class="h-auto w-full sm:w-3/4 lg:w-full"
         alt="profile me" />
     </figure>
-    <BaseSocialIcon />
+    <BaseIconSocial />
   </div>
 </template>

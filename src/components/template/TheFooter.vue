@@ -3,7 +3,7 @@
     <div
       class="container grid grid-cols-12 gap-8 border-t border-neutral-800 py-16 lg:gap-4">
       <div class="col-span-full lg:col-span-3">
-        <IconLogo class="w-40" />
+        <BaseLogo class="h-24 w-24" text-size="text-4xl" />
       </div>
       <div class="col-span-full text-typo-400 lg:col-span-6">
         <p class="mb-8 text-2xl leading-relaxed">
@@ -17,7 +17,7 @@
       </div>
       <div
         class="col-span-full justify-self-start lg:col-span-3 lg:justify-self-end">
-        <BaseSocialIcon />
+        <BaseIconSocial />
       </div>
     </div>
   </footer>

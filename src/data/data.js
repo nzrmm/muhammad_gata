@@ -1,3 +1,70 @@
+import Html from '@iconify/icons-bx/bxl-html5';
+import Css from '@iconify/icons-bx/bxl-css3';
+import Javascript from '@iconify/icons-bx/bxl-javascript';
+import Sass from '@iconify/icons-bx/bxl-sass';
+import Bootstrap from '@iconify/icons-bx/bxl-bootstrap';
+import Tailwind from '@iconify/icons-bx/bxl-tailwind-css';
+import Vue from '@iconify/icons-bx/bxl-vuejs';
+import Github from '@iconify/icons-bx/bxl-github';
+import Facebook from '@iconify/icons-bx/bxl-facebook-circle';
+import Linkedin from '@iconify/icons-bx/bxl-linkedin';
+
+export const socials = [
+  {
+    id: 1,
+    icon: Github,
+    link: 'https://github.com/nzrmm',
+  },
+  {
+    id: 2,
+    icon: Facebook,
+    link: 'https://web.facebook.com/profile.php?id=100010330266856',
+  },
+  {
+    id: 1,
+    icon: Linkedin,
+    link: 'https://www.linkedin.com/in/muhammad-gata-44a66b1b5/',
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    name: 'Html',
+    icon: Html,
+  },
+  {
+    id: 2,
+    name: 'Css',
+    icon: Css,
+  },
+  {
+    id: 3,
+    name: 'Javascript',
+    icon: Javascript,
+  },
+  {
+    id: 4,
+    name: 'SASS',
+    icon: Sass,
+  },
+  {
+    id: 5,
+    name: 'Bootstrap',
+    icon: Bootstrap,
+  },
+  {
+    id: 6,
+    name: 'Tailwind',
+    icon: Tailwind,
+  },
+  {
+    id: 7,
+    name: 'Vue',
+    icon: Vue,
+  },
+];
+
 export const projects = [
   {
     id: 1,

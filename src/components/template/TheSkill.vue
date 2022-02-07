@@ -1,48 +1,41 @@
 <template>
   <div class="py-10">
     <div class="flex-center flex-wrap gap-8">
-      <div class="icon-wrapper group">
-        <IconHtml class="icon-color" />
-        <span class="icon-name">Html</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconCss class="icon-color" />
-        <span class="icon-name">Css</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconJavascript class="icon-color" />
-        <span class="icon-name">Javascript</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconSass class="icon-color" />
-        <span class="icon-name">Sass</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconBootstrap class="icon-color" />
-        <span class="icon-name">Bootstrap</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconTailwind class="icon-color" />
-        <span class="icon-name">Tailwind</span>
-      </div>
-      <div class="icon-wrapper group">
-        <IconVue class="icon-color" />
-        <span class="icon-name">Vue</span>
+      <div
+        v-for="skill in skills"
+        :key="skill.id"
+        class="group flex flex-col items-center">
+        <!-- <IconVue class="icon-color" /> -->
+        <Icon
+          :icon="skill.icon"
+          class="h-20 w-20 text-neutral-800 transition-all duration-500 hover:text-teal-500" />
+        <span
+          class="opacity-0 transition-all duration-500 group-hover:opacity-100">
+          {{ skill.name }}
+        </span>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-.icon-wrapper {
-  @apply flex flex-col items-center;
-}
+<script>
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+import { Icon } from '@iconify/vue';
+export default {
+  components: {
+    Icon,
+  },
+  setup() {
+    const store = useStore();
 
-.icon-color {
-  @apply h-20 w-20 fill-neutral-800 transition-all duration-500 hover:fill-teal-500;
-}
+    const skills = computed(() => {
+      return store.state.skills;
+    });
 
-.icon-name {
-  @apply opacity-0 transition-all duration-500 group-hover:opacity-100;
-}
-</style>
+    return {
+      skills,
+    };
+  },
+};
+</script>
