@@ -12,7 +12,7 @@
         <div
           class="flex-center transition-500 mt-4 h-12 w-12 cursor-pointer rounded-full hover:bg-neutral-200/10"
           @click="toggleMenu">
-          <IconClose />
+          <Icon icon="ci:close-small" class="h-10 w-10 text-white" />
         </div>
       </section>
     </transition>
@@ -26,14 +26,18 @@
     </section>
 
     <button type="button" class="cursor-pointer" v-else @click="toggleMenu">
-      <IconMenu class="fill-white" />
+      <Icon icon="gg:menu-hotdog" class="h-10 w-10 text-white" />
     </button>
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
+import { Icon } from '@iconify/vue';
 export default {
+  components: {
+    Icon,
+  },
   setup() {
     const menu = ref(false);
     const mobile = ref(false);
