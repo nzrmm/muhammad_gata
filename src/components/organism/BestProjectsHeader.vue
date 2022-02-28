@@ -4,9 +4,9 @@
       <router-link
         :to="{
           name: 'Project Details',
-          params: { slug: project.slug },
+          params: { slug: project.slug, title: project.title },
         }">
-        {{ project.name }}
+        {{ project.title }}
       </router-link>
     </h2>
     <div>

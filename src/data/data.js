@@ -70,7 +70,7 @@ export const projects = [
     id: 1,
     slug: 'cuanmaker-dashboard',
     img: 'projects/project-1.webp',
-    name: 'Cuanmaker Dashboard',
+    title: 'Cuanmaker Dashboard',
     tags: ['tailwindcss', 'vue 3'],
     snippet:
       'Slicing dashboard design from discord challenge Mas Azarie Muhammad.',
@@ -83,7 +83,7 @@ export const projects = [
     id: 2,
     slug: 'countries',
     img: 'projects/project-2.webp',
-    name: 'Countries Finder',
+    title: 'Countries Finder',
     tags: ['tailwindcss', 'vue 3', 'axios'],
     snippet:
       'Countries finder from Frontend Mentor Challenge and API from restcountries.com',
@@ -96,7 +96,7 @@ export const projects = [
     id: 3,
     slug: 'gpt3-slicing',
     img: 'projects/project-3.webp',
-    name: 'GPT 3 Slicing',
+    title: 'GPT 3 Slicing',
     tags: ['bootstrap 5', 'sass'],
     snippet: 'Slicing landing page design from arshakir dribbble collection.',
     description:

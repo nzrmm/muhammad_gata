@@ -5,7 +5,7 @@
         <router-link
           :to="{
             name: 'Project Details',
-            params: { slug: project.slug },
+            params: { slug: project.slug, title: project.title },
           }">
           <BaseImageSmall :img="project.img" :alt="project.slug" />
         </router-link>

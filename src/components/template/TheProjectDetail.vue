@@ -1,7 +1,7 @@
 <template>
   <section class="py-40">
     <ProjectDetailHeader
-      :name="project.name"
+      :title="project.title"
       :description="project.description" />
     <div class="mb-32">
       <div class="mb-16 flex items-center justify-end gap-2">
