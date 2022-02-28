@@ -20,19 +20,16 @@ import { ref, onMounted } from 'vue';
 export default {
   setup() {
     const isVisible = ref(false);
-    const intervalId = ref();
 
     const scrollVisible = () => {
       isVisible.value = window.scrollY > 250;
     };
 
     const scrollToTop = () => {
-      intervalId.value = setInterval(() => {
-        if (window.scrollY === 0) {
-          clearInterval(intervalId.value);
-        }
-        window.scroll(0, window.scrollY - 80);
-      }, 20);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     };
 
     onMounted(() => {
